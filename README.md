@@ -1,5 +1,5 @@
 # DPGEN-DIMER
-A modification of  [DPGEN](https://github.com/deepmodeling/dpgen) code, we add  the [dimer method](http://theory.cm.utexas.edu/henkelman/pubs/henkelman99_7010.pdf) as a method of model deviation, which could make our MLFF model predict the saddle points with high precision and few training data. 
+A modification of  [DPGEN](https://github.com/deepmodeling/dpgen) code, we add  the [dimer method](http://theory.cm.utexas.edu/henkelman/pubs/henkelman99_7010.pdf) as a method of model deviation, which could make our MLFF model predict the saddle points with high precision and few training data. And, it can be used as a good transition state sampling method for rare events collection.
 
 ## Requirements:
 python>=3.8.0
@@ -32,4 +32,4 @@ Besides the calculation folders, put run.py, arginfo.py, dimer.py, Templates of 
 `test_saddle.py`: This code could generate muliple dimer search to get saddle points and corresponding barriers for the given initial configuration. The barriers are in the `barrier_sad.txt`. 
 
 ## PS:
-In our code, you just need one POTCAR, not one POTCAR for each element. 
+In our modified code, you just need one POTCAR, not one POTCAR for each element. 
